@@ -71,11 +71,11 @@ embedding = embed_model.encode(prompt)
 response, score = retrieve_memory(embedding)
 
 if response:
-    print("⚡ Reused from memory (score:", score, ")")
+    print("Reused from memory (score:", score, ")")
     print(response)
 
 else:
-    print("🧠 Generating new response...")
+    print("Generating new response...")
 
     config = reasoning_controller(prompt)
 
